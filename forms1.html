@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login & Register</title>
+
+<style>
+#registerForm{
+    display:none;
+}
+</style>
+
+<script>
+function showRegister(){
+    document.getElementById("loginForm").style.display="none";
+    document.getElementById("registerForm").style.display="block";
+}
+
+function showLogin(){
+    document.getElementById("registerForm").style.display="none";
+    document.getElementById("loginForm").style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- Login Form -->
+<div id="loginForm">
+    <h2>Login</h2>
+
+    <label>User Name</label><br>
+    <input type="text"><br><br>
+
+    <label>Email</label><br>
+    <input type="email"><br><br>
+
+    <label>Password</label><br>
+    <input type="password"><br><br>
+
+    <button>Login</button>
+    <button type="button" onclick="showRegister()">Register</button>
+</div>
+
+<!-- Register Form -->
+<div id="registerForm">
+    <h2>Register</h2>
+
+    <label>First Name</label><br>
+    <input type="text"><br><br>
+
+    <label>Last Name</label><br>
+    <input type="text"><br><br>
+
+    <label>Email</label><br>
+    <input type="email"><br><br>
+
+    <label>Password</label><br>
+    <input type="password"><br><br>
+
+    <label> Number</label><br>
+    <input type="Number"><br><br>
+
+    <label>College Name</label><br>
+    <input type="College Name"><br><br>
+
+    <label>Branch</label><br>
+    <input type="Branch"><br><br>
+
+    <label>Year</label><br>
+    <input type="Year"><br><br>
+
+    <button>Submit</button>
+    <button type="button" onclick="showLogin()">Back to Login</button>
+</div>
+
+</body>
+</html>
